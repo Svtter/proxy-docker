@@ -10,4 +10,4 @@ RUN apt-get update && \
 RUN pip install proxy.py
 
 # Configure container to run as an executable
-ENTRYPOINT ["proxy.py"]
+ENTRYPOINT ["/usr/local/bin/proxy.py"]
